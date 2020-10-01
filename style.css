@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-gray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-gray: hsl(0, 0%, 27%);
+  --spartan: 'Spartan', sans-serif;
+}
+
+html{
+  font-family: var(--spartan);
+  font-size: 14px;
+}
+
+img {
+  width: 100%;
+}
+
+.body{
+  display: grid;
+  grid-template-rows: repeat(5fr);
+}
+
+.header{
+  grid-row: 1;
+  background-image: url(images/mobile-image-hero-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 50vh;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+.carousel {
+  width: 150px;
+  height: 70px;
+  display: flex;
+  background-color: var(--black);
+  position: absolute;
+  top: 41.7vh;
+  left: 275px;
+  color: var(--dark-gray);
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 100;
+}
+
+.carousel img {
+  width: 25px;
+  height: 35px;
+}
+
+.carousel img:hover {
+  cursor: pointer;
+}
+
+.header h1 {
+  position: absolute;
+  left: 40%;
+  top: 40px;
+  color: var(--white);
+}
+
+.icon-container {
+  width: 25px;
+  height: 25px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.menu {
+  width: 100%;
+  position: absolute;
+}
+
+.none {
+  display: none;
+}
+
+.menu ul{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-top: 70px;
+  background-color: var(--white);
+}
+
+.main-info {
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-info-container h1 {
+  padding: 25px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.main-info-container p {
+  padding: 30px;
+  color: var(--dark-gray);
+  padding-top: 0;
+  line-height: 1.6;
+}
+
+.shop-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.shop-now h3{
+  width: 70%;
+}
+
+.shop-now h3 a {
+  text-decoration: none;
+  color: var(--black);
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+.shop-now img {
+  width: 15%;
+  margin-right: 140px;
+}
+
+.about-img {
+  grid-row: 3;
+  width: 100%;
+  height: 30vh;
+  background-image: url(images/image-about-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 70px;
+}
+
+.about {
+  grid-row: 4;
+}
+
+.about h2 {
+  padding: 25px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.about p {
+  padding: 30px;
+  padding-top: 0;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+.last {
+  grid-row: 5;
+  width: 100%;
+  height: 30vh;
+  background-image: url(images/image-about-light.jpg);
+}
